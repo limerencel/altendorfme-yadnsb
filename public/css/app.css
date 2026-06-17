@@ -46,7 +46,7 @@
 html, body {
     background: var(--yad-bg);
     color: var(--yad-text);
-    font-family: "Noto Serif", serif !important;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-control::placeholder { color: var(--yad-text-soft); }
 
-textarea.form-control { font-family: "Noto Serif", serif !important; font-size: 0.85rem; }
+textarea.form-control { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; font-size: 0.85rem; }
 
 .form-text { color: var(--yad-text-soft) !important; font-size: 0.78rem; }
 
@@ -399,7 +399,7 @@ textarea.form-control { font-family: "Noto Serif", serif !important; font-size: 
     font-weight: 600;
     border-radius: 6px;
     text-transform: uppercase;
-    font-family: "Noto Serif", serif !important;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     border: 1px solid transparent;
 }
 
@@ -549,7 +549,6 @@ a:hover { color: var(--yad-accent-2); }
     color: var(--yad-text-muted) !important;
 }
 
-.navbar.bg-dark { overflow: hidden; }
 .navbar.bg-dark > .container { position: relative; z-index: 2; }
 
 .navbar.bg-dark::before,
@@ -606,12 +605,4 @@ a:hover { color: var(--yad-accent-2); }
     .btn-group .btn { padding: 0.35rem 0.55rem; }
     .navbar-brand { font-size: 1rem; }
     body.bg-dark::before { background-size: 40px 40px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-    }
 }

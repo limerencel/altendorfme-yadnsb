@@ -7,6 +7,7 @@
     "scripts": {
         "start": "node server.js",
         "dev": "node --watch server.js",
+        "test": "node --test tests/**/*.test.js",
         "build": "echo 'Build completed'",
         "docker:build": "docker build -t yadnsb .",
         "docker:run": "docker run -d -p 3000:3000 --name yadnsb yadnsb",
@@ -28,15 +29,14 @@
     "license": "MIT",
     "dependencies": {
         "@matrixai/quic": "^2.0.9",
-        "dns2": "^2.1.0",
         "dohjs": "^0.3.3",
-        "express": "^5.1.0",
-        "ws": "^8.18.2"
+        "express": "^5.2.1",
+        "ws": "^8.21.0"
     },
     "engines": {
         "node": ">=22.0.0"
     },
     "devDependencies": {
-        "cross-env": "^7.0.3"
+        "cross-env": "^10.1.0"
     }
 }
